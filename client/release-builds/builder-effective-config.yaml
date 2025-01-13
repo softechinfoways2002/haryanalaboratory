@@ -1,0 +1,20 @@
+directories:
+  output: release-builds
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - main.js
+extraMetadata:
+  main: build/electron.js
+appId: com.example.yourapp
+productName: YourAppName
+mac:
+  target: dmg
+win:
+  target: nsis
+linux:
+  target: AppImage
+extends: react-cra
+electronVersion: 32.0.1
